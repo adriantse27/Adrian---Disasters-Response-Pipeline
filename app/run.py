@@ -26,7 +26,7 @@ def tokenize(text):
     return clean_tokens
 
 # load data
-engine = create_engine('sqlite:///../data/DisasterMessage.db')
+engine = create_engine('sqlite:///../data/DisastersMessage.db')
 df = pd.read_sql_table('Disasters', engine)
 
 # load model
